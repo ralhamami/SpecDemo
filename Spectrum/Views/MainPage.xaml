@@ -1,0 +1,45 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:spectrum="clr-namespace:Spectrum" x:Class="Spectrum.MainPage" NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <Image Source="spectrum.png" Margin="20" HeightRequest="25"/>
+        <StackLayout>
+            <SearchBar x:Name="storesSearchBar" Placeholder="Filter by zip..." TextChanged="SearchButtonPressed">
+                <SearchBar.Behaviors>
+                    <spectrum:SearchBehavior/>
+                </SearchBar.Behaviors>
+            </SearchBar>
+            <ListView x:Name="storeList" RowHeight="60" Margin="10,0,0,0" ItemTapped="OnItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="40" HeightRequest="40" DownsampleToViewSize="true" Source="{Binding photos[0].derivatives[0].url,FallbackValue='noimg.png'}">
+                                </ffimageloading:CachedImage>
+                                <StackLayout>
+                                    <Label FontSize="Medium"  TextColor="#00203E">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}{0} {1}">
+                                                <Binding Path="locationName" />
+                                                <Binding Path="city" />
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                    <Label>
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}{0}, {1}, {2} {3}">
+                                                <Binding Path="address" />
+                                                <Binding Path="city" />
+                                                <Binding Path="state" />
+                                                <Binding Path="zip"/>
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                    <Label Text="{Binding address}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

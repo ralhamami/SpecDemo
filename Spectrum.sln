@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectrum.Android", "Spectrum.Android\Spectrum.Android.csproj", "{B72486DD-C965-401D-B22D-7649397C1531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectrum", "Spectrum\Spectrum.csproj", "{5458D0D7-71BE-416C-8375-E1C1A82533BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B72486DD-C965-401D-B22D-7649397C1531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72486DD-C965-401D-B22D-7649397C1531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72486DD-C965-401D-B22D-7649397C1531}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B72486DD-C965-401D-B22D-7649397C1531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72486DD-C965-401D-B22D-7649397C1531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72486DD-C965-401D-B22D-7649397C1531}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5458D0D7-71BE-416C-8375-E1C1A82533BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5458D0D7-71BE-416C-8375-E1C1A82533BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5458D0D7-71BE-416C-8375-E1C1A82533BA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5458D0D7-71BE-416C-8375-E1C1A82533BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5458D0D7-71BE-416C-8375-E1C1A82533BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5458D0D7-71BE-416C-8375-E1C1A82533BA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4EC01D9-C9DD-41A4-BB98-14BE7C359EEF}
+	EndGlobalSection
+EndGlobal

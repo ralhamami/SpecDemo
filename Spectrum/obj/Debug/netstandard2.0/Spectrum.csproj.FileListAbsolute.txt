@@ -1,0 +1,16 @@
+C:\Users\ralha\source\repos\Spectrum\Spectrum\bin\Debug\netstandard2.0\Spectrum.deps.json
+C:\Users\ralha\source\repos\Spectrum\Spectrum\bin\Debug\netstandard2.0\Spectrum.dll
+C:\Users\ralha\source\repos\Spectrum\Spectrum\bin\Debug\netstandard2.0\Spectrum.pdb
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.csproj.AssemblyReference.cache
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Views\StoreDetails.xaml.g.cs
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.AssemblyInfoInputs.cache
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.AssemblyInfo.cs
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.csproj.CoreCompileInputs.cache
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.dll
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\refint\Spectrum.dll
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\Spectrum.pdb
+C:\Users\ralha\source\repos\Spectrum\Spectrum\obj\Debug\netstandard2.0\ref\Spectrum.dll

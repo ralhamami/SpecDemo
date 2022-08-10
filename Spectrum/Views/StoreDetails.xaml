@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:spectrum="clr-namespace:Spectrum" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" NavigationPage.HasNavigationBar="False"
+             x:Class="Spectrum.StoreDetails">
+    <ContentPage.Resources>
+        <spectrum:StringToPhoneConverter x:Key="phoneConverter"/>
+        <spectrum:StringToHoursConverter x:Key="hoursConverter"/>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <ffimageloading:CachedImage HorizontalOptions="FillAndExpand" DownsampleToViewSize="true" Source="{Binding photos[0].derivatives[0].url,FallbackValue='noimg.png'}">
+            </ffimageloading:CachedImage>
+            <Label FontSize="Title" TextColor="#00203E" HorizontalOptions="Center">
+                <Label.Text>
+                    <MultiBinding StringFormat="{}{0} {1}">
+                        <Binding Path="locationName" />
+                        <Binding Path="city" />
+                    </MultiBinding>
+                </Label.Text>
+                <Label.Effects>
+                    <spectrum:ShadowEffect Radius="5" DistanceX="5" DistanceY="5">
+                        <spectrum:ShadowEffect.Color>
+                            <OnPlatform x:TypeArguments="Color">
+                                <On Platform="Android" Value="gray" />
+                            </OnPlatform>
+                        </spectrum:ShadowEffect.Color>
+                    </spectrum:ShadowEffect>
+                </Label.Effects>
+            </Label>
+            <Label x:Name="address" FontAttributes="Italic" TextColor="green" HorizontalOptions="Center">
+                <Label.Text>
+                    <MultiBinding StringFormat="{}{0}, {1}, {2} {3}">
+                        <Binding Path="address" />
+                        <Binding Path="city" />
+                        <Binding Path="state" />
+                        <Binding Path="zip"/>
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+            <Label x:Name="phoneLabel" Text="{Binding phone,Converter={StaticResource phoneConverter}}" FontAttributes="Italic" FontSize="Title" TextColor="Blue"  HorizontalOptions="Center" />
+            <Label Text="Store Hours" HorizontalOptions="Center"/>
+            <StackLayout  BindableLayout.ItemsSource="{Binding hours,Converter={StaticResource hoursConverter}}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
